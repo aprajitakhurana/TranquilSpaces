@@ -1,0 +1,96 @@
+.cardContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  background-color: #4F3961;
+  color: #4F3961;
+  padding: 0.5rem;
+  height: 300px;
+  width: 95%;
+      grid-template-areas: "icon"
+ "header"
+ "content";
+}
+
+.header {
+  color: #f3d4d4;
+  font-size: larger;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border:none;
+}
+
+.icon {
+-ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: icon;
+  width: 128px;
+  height: 128px;
+  background-size: contain;
+}
+
+.cardDepression .icon {
+  background-image: url("depression.png");
+}
+
+.cardAnxiety .icon {
+  background-image: url("anxiety.png");
+}
+
+.cardADHD .icon {
+  background-image: url("adhd.png");
+}
+
+.cardEatingDisorder .icon {
+  background-image: url("bullimia.png");
+}
+
+.cardAddiction .icon {
+  background-image: url("addiction.png");
+}
+
+.cardInsomnia .icon {
+  background-image: url("insomnia.png");
+}
+
+.cardPTSD .icon {
+  background-image: url("ptsd.png");
+}
+
+.cardBipolar .icon {
+  background-image: url("bipolar.png");
+}
+
+.cardSchizophrenia .icon {
+  background-image: url("schizophrenia.png");
+}
+
+.header {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: header;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.content {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: content;
+  font-size: 15px;
+
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */

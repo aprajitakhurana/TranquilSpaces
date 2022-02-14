@@ -1,0 +1,29 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.helplineCards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid #F3D4D4;
+  color: #F3D4D4;
+  padding: 0.5rem;
+  font-size: 30px;
+}
+
+.phonenumber {
+  font-size: 20px;
+}
+
+.time {
+  font-size: 20px;
+}
+/*# sourceMappingURL=styles.css.map */
